@@ -6,7 +6,7 @@ Proyecto End-to-End sobre un Data Lake con **Arquitectura Medallion**, diseñado
 ## Arquitectura y Capas de Datos en Data Lake
 * **Capa Bronze (Cruda):** Ingesta y almacenamiento de eventos en formato JSON (generado por el script simulador de streaming) otorgando persistencia de los datos originales (crudos).
 * **Capa Silver (Procesada):** Transformación, limpieza y estructuración de los datos para mantener un registro histórico.
-* **Optimización (Parquet):** Compactación de la información en archivos particionados por día en formato columnar **Parquet** esto pensando en la optimización del espacio y aceleración de consultas y para un fácil consumo de los datos así como para un an alisis más profundo en caso de requerirse.
+* **Optimización (Parquet):** Compactación de la información en archivos particionados por día en formato columnar **Parquet** esto pensando en la optimización del espacio y aceleración de consultas y para un fácil consumo de los datos así como para un análisis más profundo en caso de requerirse.
 
 
 ## Tecnologías Utilizadas
@@ -35,4 +35,4 @@ Proyecto End-to-End sobre un Data Lake con **Arquitectura Medallion**, diseñado
 ```text
 HomeLab_Telemetria/
 ├── SimuladorAutos.py    # Script principal de simulación y conexión con MinIO para carga de datos Crudos
-└── CargaData.py         # Script para limpieza, y agregaciión a acpas Silver y Gold de nuestro Data Lake
+└── CargaData.py         # Script para limpieza, y agregaciión a capas Silver y Gold de nuestro Data Lake
