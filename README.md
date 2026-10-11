@@ -16,8 +16,12 @@ Proyecto End-to-End sobre un Data Lake con **Arquitectura Medallion**, diseñado
 * **Infraestructura y OS:** Docker, Linux Mint 22.3 (HomeLab)
 
 
-## Flujo de Datos
+## Ventaja de negocio
+1. **Toma de decisiones basada en datos: ** Con la simulación se permite validar métricas de flota vehicular como lo son patrones de viaje, consumo energético, rentabilidad así como la inversión realizada logrando la optimización operativa.
+2. ** Eficiencia de costos y almacenamiento:** Con la estructuración en capas así como la compactación de los archivos en formato parquet se optimiza el espacio de almacenamiento (ya sea local o en cloud) lo cual se traduce en reducción de costo de infraestructura así como agilizando consultas analíticas requeridas por el usuario.
 
+
+## Flujo de Datos
 1. **Simulación de Flota (`SimuladorAutos.py`):**
    * Se tiene una flota 10 vehículos con coordenadas geográficas reales de la CDMX.
    * Simula la conducción de los vehiculos (desplazamientos de coordenadas, variaciones de velocidad , consumo y recarga de batería).
@@ -36,3 +40,5 @@ Proyecto End-to-End sobre un Data Lake con **Arquitectura Medallion**, diseñado
 HomeLab_Telemetria/
 ├── SimuladorAutos.py    # Script principal de simulación y conexión con MinIO para carga de datos Crudos
 └── CargaData.py         # Script para limpieza, y agregaciión a capas Silver y Gold de nuestro Data Lake
+
+
